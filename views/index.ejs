@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>REST API Secrets</title>
+</head>
+<body>
+  <h1>REST API CRUD Practice</h1>
+
+  <h2>Get Secret</h2>
+  <form method="POST" action="/get-secret">
+    <input name="id" placeholder="Secret ID" required />
+    <button type="submit">GET</button>
+  </form>
+
+  <h2>Post Secret</h2>
+  <form method="POST" action="/post-secret">
+    <input name="secret" placeholder="Secret" required />
+    <input name="score" placeholder="Score" required />
+    <button type="submit">POST</button>
+  </form>
+
+  <h2>Put Secret</h2>
+  <form method="POST" action="/put-secret">
+    <input name="id" placeholder="Secret ID" required />
+    <input name="secret" placeholder="New Secret" required />
+    <input name="score" placeholder="New Score" required />
+    <button type="submit">PUT</button>
+  </form>
+
+  <h2>Patch Secret</h2>
+  <form method="POST" action="/patch-secret">
+    <input name="id" placeholder="Secret ID" required />
+    <input name="secret" placeholder="Updated Secret" />
+    <input name="score" placeholder="Updated Score" />
+    <button type="submit">PATCH</button>
+  </form>
+
+  <h2>Delete Secret</h2>
+  <form method="POST" action="/delete-secret">
+    <input name="id" placeholder="Secret ID" required />
+    <button type="submit">DELETE</button>
+  </form>
+
+  <h3>Response:</h3>
+  <pre><%= content %></pre>
+
+</body>
+</html>
